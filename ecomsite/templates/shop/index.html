@@ -44,8 +44,8 @@
                     <div class="card-discount">
                         <em>{{ i.category }}</em>
                     </div>
-                    <button class="btn btn-warning">View</button>
-                    <button class="btn btn-warning">Add to Cart</button>
+                    <a href="/{{ i.id }}" class="btn btn-warning">View</a>
+                    <a class="btn btn-warning">Add to Cart</a>
 
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <ul class="pagination">
                 {% if prod_details.has_previous %}
                     <li class="page-item">
-                        <a class="page-link" href="?page={{ prod_details.previous_page_number">Previous</a>
+                        <a class="page-link" href="?page={{ prod_details.previous_page_number }}">Previous</a>
                     </li>
                 {% endif %}
 
