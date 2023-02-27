@@ -19,6 +19,7 @@ from rest_framework import routers
 from shop import views
 from shop.views import MovieViewSet,ComedyViewSet,ActionViewSet
 
+# for using endpoints in api
 router = routers.SimpleRouter()
 router.register('movies',MovieViewSet)
 router.register('action',ActionViewSet)

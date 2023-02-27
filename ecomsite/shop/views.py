@@ -32,6 +32,7 @@ class MovieViewSet(viewsets.ModelViewSet):
     queryset = Moviedata.objects.all()
     serializer_class = MovieSerializer
 
+# APi endpoints
 class ActionViewSet(viewsets.ModelViewSet):
     queryset = Moviedata.objects.filter(typ="action")
     serializer_class = MovieSerializer
